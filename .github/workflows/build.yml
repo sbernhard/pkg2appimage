@@ -46,8 +46,8 @@ jobs:
 
     - name: Test to create neovim AppImage
       run: |
-        chmod +x ./out/pkg2appimage*.AppImage*
-        ./out/pkg2appimage*.AppImage* recipes/neovim.yml
+        chmod +x ./out/pkg2appimage*.AppImage
+        ./out/pkg2appimage*.AppImage recipes/neovim.yml
 
     - name: Verify AppImage Creation and Test
       run: |
